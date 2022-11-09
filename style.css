@@ -3,198 +3,35 @@
     padding: 0px;
     margin: 0px;
 }
-html{
-    scroll-behavior: smooth;
-}
-#navbar
-{
-    position: relative;
-}
-
 header
 {
-    background-color: black;
+    background-color: aqua;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    width: 100;
-}
-
-
-
-/* styling the log of header */
-#logo
-{
-   margin: 12px 12px;
-}
-#logo img{
-    border: 2px solid red;
-    border-radius: 3rem;
-}
-/* navbar styling in left side */
-.nav-bar
-{
-    display: inline-block;
-    justify-content: space-between;
-    margin: 0px 57px;
-}
-/* inside the a tag styling  */
-
-.nav-bar a
-{
-    padding: 4px 12px;
-    margin: 0px 13px;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-}
-/* giving effect to a tag when hover on it */
-#cont-body
-{
-    position: relative;
-}
-.nav-bar a:hover
-{
-    color: black;
-    background-color: white;
-    border-radius: 12px;
-    transition: transform .2s;
-}
-/* zoom in function  */
-
-@media only screen and (min-width:400px) and (max-width:700px)
-{
-    header
-    {
-        background-color: black;
-        margin: 0px;
-        display: block;
-        text-align: center;
-    }
-    .header-first
-    {
-        border: 2px solid black;
-        height: 100%;
-        width: 100%;
-        padding: 0px;
-        
-    }
-}
-
-
-#second-para
-{
-    height: 100%;
-    width: 100%;
-    border: 2px solid red;
-    background: url('./photo/bg.png') no-repeat center center/cover;
-    
-
-}
-#second-para h2
-{
-    color: rgb(5, 5, 5);
-    border: 1px solid black;
-    text-decoration:wavy;
-    font-size:1.3rem;
-    font-family: "Sofia", sans-serif;
-    text-align: center;
-    justify-content: center;
-    padding: 12px;
-}
-marquee
-{
-    margin-top: 1px;
-    padding: 12px 0px;
-    background-color: gray;
-    border-radius: 12px;
-}
-
-/* main-body start */
-.main-body
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
-    /* display: inline-block; */
-    grid-gap: 9rem;
-    padding: 30px;
-    background-color: antiquewhite;
-    border-radius: 15px;
-    border: 2px solid red;
-}
-.main-body a
-{
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 12px;
-}
-
-.main-body a h2
-{
-    color: black;
-}
-
-/* styling footer strat form here */
-
-footer
-{
-    display: flex;
-    background-color: rgb(3, 3, 3);
-    padding: 12px 0px;
     flex-direction: row;
-    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo styling */
+header .log
+{
+    border: 2px solid ;
+    width: 200px;
+    margin: 12px 0px;
+    margin-left: 12px;
     
 }
+/* log img stylige */
 
-/* left side padding */
-
-.left
+header .log img
 {
-    padding: 30px 12px;
-}
-/* a tag padding */
-.left a
-{
-    margin: 0px 20px;
-}
-
-#praveen
-{
-    /* position: absolute; */
-    display: block;
-    margin: auto;
-    /* margin: auto; */
-    /* margin: 0px 120px; */
+    border: 2px solid red;
     border-radius: 3rem;
+    margin-right: 12px;
 }
-footer,#rigth
+header .log 
 {
-    color: white;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-}
-@media only screen and (min-width:500px) and (max-width:700px)
-{
-    footer
-    {
-        display: grid;
-        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-        
-    }
-    .last
-    {
-        display: block;
-        text-align: center;
-    }
-    footer,.left
-    {
-        display: block;
-        text-align: center;
-    }
-
 }
