@@ -5,33 +5,73 @@
 }
 header
 {
-    background-color: aqua;
     display: flex;
+    background-color: gray;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-}
-
-/* logo styling */
-header .log
-{
-    border: 2px solid ;
-    width: 200px;
-    margin: 12px 0px;
-    margin-left: 12px;
-    
-}
-/* log img stylige */
-
-header .log img
-{
-    border: 2px solid red;
-    border-radius: 3rem;
-    margin-right: 12px;
-}
-header .log 
-{
-    display: inline-flex;
-    justify-content: center;
     align-items: center;
+}
+
+header .logo
+{
+    display: flex;
+    margin: 1rem 2rem;
+    border: 2px solid red;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    font-size:small;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+header .logo img
+{
+    margin-right: 1rem;
+    border-radius: 2rem;
+}
+
+header .nav
+{
+    margin-right: 6rem;
+}
+
+header .nav a
+{
+    text-decoration: none;
+    font-size:larger;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+    /* border: 2px solid red; */
+    padding: 1rem;
+    margin: 0rem 2rem;
+    border-radius: .9rem;
+}
+header .nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+@media(max-width:998px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+}
+@media(max-width:768px)
+{
+    html
+    {
+        font-size: 65%;
+    }
+}
+@media(max-width:300px)
+{
+    html
+    {
+        font-size: 70%;
+    }
 }
